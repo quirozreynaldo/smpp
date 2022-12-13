@@ -1,0 +1,30 @@
+2022-08-23 15:05:10.387 IOException receive via TCPIPConnection
+2022-08-23 15:05:10.387 Exception: java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:323)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:350)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:803)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:966)
+	at java.base/java.io.BufferedInputStream.read1(BufferedInputStream.java:282)
+	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:343)
+	at com.logica.smpp.TCPIPConnection.receive(TCPIPConnection.java:413)
+	at com.logica.smpp.ReceiverBase.receivePDUFromConnection(ReceiverBase.java:241)
+	at com.logica.smpp.Receiver.receiveAsync(Receiver.java:386)
+	at com.logica.smpp.ReceiverBase.process(ReceiverBase.java:126)
+	at com.logica.smpp.util.ProcessingThread.run(ProcessingThread.java:196)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+2022-08-23 15:05:10.387 Receiver.receiveAsync()
+2022-08-23 15:05:10.387 Exception: java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:323)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:350)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:803)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:966)
+	at java.base/java.io.BufferedInputStream.read1(BufferedInputStream.java:282)
+	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:343)
+	at com.logica.smpp.TCPIPConnection.receive(TCPIPConnection.java:413)
+	at com.logica.smpp.ReceiverBase.receivePDUFromConnection(ReceiverBase.java:241)
+	at com.logica.smpp.Receiver.receiveAsync(Receiver.java:386)
+	at com.logica.smpp.ReceiverBase.process(ReceiverBase.java:126)
+	at com.logica.smpp.util.ProcessingThread.run(ProcessingThread.java:196)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+

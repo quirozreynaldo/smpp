@@ -1,0 +1,183 @@
+2022-08-23 15:03:50.137    main:  entered
+2022-08-23 15:04:04.242       main:  entered
+2022-08-23 15:04:04.259       main:  opened client tcp/ip connection to 127.0.0.1 on port 9086 (7)
+2022-08-23 15:04:04.259       main:  exited
+2022-08-23 15:04:04.264       main:  entered
+2022-08-23 15:04:04.265       main:  Sending request (bindreq: (pdu: 0 9 0 [501]) hugo hugo Logica 52 (addrrang: 0 0 ) )  (4)
+2022-08-23 15:04:04.265          main:  entered
+2022-08-23 15:04:04.265          main:  going to send pdu's data over connection (7)
+2022-08-23 15:04:04.265          main:  PDU.getData() build up data 000000250000000900000000000001f56875676f006875676f004c6f676963610034000000 (5)
+2022-08-23 15:04:04.265             main:  entered
+2022-08-23 15:04:04.265             main:  sent 37 bytes to 127.0.0.1 on port 9086 (7)
+2022-08-23 15:04:04.266             main:  exited
+2022-08-23 15:04:04.266          main:  successfully sent pdu's data over connection (7)
+2022-08-23 15:04:04.267          main:  exited
+2022-08-23 15:04:04.267       main:  Going to receive response. Expecting (bindresp: (pdu: 0 80000009 0 501) )  (4)
+2022-08-23 15:04:04.267       main:  receivePDU: Going to receive response. (1)
+2022-08-23 15:04:04.267       main:  Is transmitter only => trying to receive from connection. (1)
+2022-08-23 15:04:04.267       main:  ReceiverBase.receivePDUFromConnection start (3)
+2022-08-23 15:04:04.267          main:  entered
+2022-08-23 15:04:04.268          main:  going to read from socket (8)
+2022-08-23 15:04:04.268          main:  comms timeout=60000 receive timeout=20000 receive buffer size=4096 (8)
+2022-08-23 15:04:04.298          main:  read 31 bytes from socket (8)
+2022-08-23 15:04:04.298          main:  no more data remains in the socket (8)
+2022-08-23 15:04:04.298          main:  totally read 31 bytes from socket (7)
+2022-08-23 15:04:04.298          main:  exited
+2022-08-23 15:04:04.298       main:  trying to create pdu from unprocessed buffer (1)
+2022-08-23 15:04:04.299       main:  PDU.setData() parsing header 0000001f8000000900000000000001f5 (5)
+2022-08-23 15:04:04.299       main:  PDU.setData() parsing body 536d73632053696d756c61746f7200 (5)
+2022-08-23 15:04:04.299       main:  received complete pdu(bindresp: (pdu: 31 80000009 0 501) Smsc Simulator)  (1)
+2022-08-23 15:04:04.299       main:  there is 0 bytes left in unprocessed buffer (1)
+2022-08-23 15:04:04.299       main:  ReceiverBase.receivePDUFromConnection finished (3)
+2022-08-23 15:04:04.299       main:  Got pdu (bindresp: (pdu: 31 80000009 0 501) Smsc Simulator)  (1)
+2022-08-23 15:04:04.3       main:  Got response(?) pdu (bindresp: (pdu: 31 80000009 0 501) Smsc Simulator)  (4)
+2022-08-23 15:04:04.3       main:  checking response if it's what we expected. (4)
+2022-08-23 15:04:04.3       main:  exited
+2022-08-23 15:04:04.3    main:  Receiver starting (1)
+2022-08-23 15:04:04.3       main:  entered
+2022-08-23 15:04:04.301    Receiver-1:  entered
+2022-08-23 15:04:04.301       main:  exited
+2022-08-23 15:04:04.301    main:  Receiver started (1)
+2022-08-23 15:04:04.301    Receiver-1:  Receiver.receiveAsync() going to receive pdu. (3)
+2022-08-23 15:04:04.301    Receiver-1:  ReceiverBase.receivePDUFromConnection start (3)
+2022-08-23 15:04:04.302       Receiver-1:  entered
+2022-08-23 15:04:04.302    main:  exited
+2022-08-23 15:04:04.302       Receiver-1:  going to read from socket (8)
+2022-08-23 15:04:04.302       Receiver-1:  comms timeout=60000 receive timeout=20000 receive buffer size=4096 (8)
+2022-08-23 15:04:04.302    Thread-0:  entered
+2022-08-23 15:04:04.303       Thread-0:  entered
+2022-08-23 15:04:04.303       Thread-0:  Sending request (enquirelink: (pdu: 0 15 0 [502]) )  (4)
+2022-08-23 15:04:04.303          Thread-0:  entered
+2022-08-23 15:04:04.303          Thread-0:  going to send pdu's data over connection (7)
+2022-08-23 15:04:04.303          Thread-0:  PDU.getData() build up data 000000100000001500000000000001f6 (5)
+2022-08-23 15:04:04.303             Thread-0:  entered
+2022-08-23 15:04:04.303             Thread-0:  sent 16 bytes to 127.0.0.1 on port 9086 (7)
+2022-08-23 15:04:04.304             Thread-0:  exited
+2022-08-23 15:04:04.304          Thread-0:  successfully sent pdu's data over connection (7)
+2022-08-23 15:04:04.304          Thread-0:  exited
+2022-08-23 15:04:04.304       Thread-0:  exited
+2022-08-23 15:04:04.304    Thread-0:  exited
+2022-08-23 15:04:04.307       Receiver-1:  read 16 bytes from socket (8)
+2022-08-23 15:04:04.308       Receiver-1:  no more data remains in the socket (8)
+2022-08-23 15:04:04.308       Receiver-1:  totally read 16 bytes from socket (7)
+2022-08-23 15:04:04.308       Receiver-1:  exited
+2022-08-23 15:04:04.308    Receiver-1:  trying to create pdu from unprocessed buffer (1)
+2022-08-23 15:04:04.308    Receiver-1:  PDU.setData() parsing header 000000108000001500000000000001f6 (5)
+2022-08-23 15:04:04.309    Receiver-1:  PDU.setData() no data for body (5)
+2022-08-23 15:04:04.309    Receiver-1:  received complete pdu(enquirelink_resp: (pdu: 16 80000015 0 502) )  (1)
+2022-08-23 15:04:04.309    Receiver-1:  there is 0 bytes left in unprocessed buffer (1)
+2022-08-23 15:04:04.309    Receiver-1:  ReceiverBase.receivePDUFromConnection finished (3)
+2022-08-23 15:04:04.309    Receiver-1:  Receiver.receiveAsync(): PDU received, processing (enquirelink_resp: (pdu: 16 80000015 0 502) )  (1)
+2022-08-23 15:04:04.309    Receiver-1:  receiver passing pdu to ServerPDUEventListener (1)
+2022-08-23 15:04:04.31    Receiver-1:  Receiver.receiveAsync() going to receive pdu. (3)
+2022-08-23 15:04:04.311    Receiver-1:  ReceiverBase.receivePDUFromConnection start (3)
+2022-08-23 15:04:04.311       Receiver-1:  entered
+2022-08-23 15:04:04.311       Receiver-1:  going to read from socket (8)
+2022-08-23 15:04:04.311       Receiver-1:  comms timeout=60000 receive timeout=20000 receive buffer size=4096 (8)
+2022-08-23 15:04:09.879       main:  entered
+2022-08-23 15:04:34.305       Thread-0:  entered
+2022-08-23 15:04:34.306          Thread-0:  entered
+2022-08-23 15:04:34.307          Thread-0:  Sending request (enquirelink: (pdu: 0 15 0 [503]) )  (4)
+2022-08-23 15:04:34.308             Thread-0:  entered
+2022-08-23 15:04:34.309             Thread-0:  going to send pdu's data over connection (7)
+2022-08-23 15:04:34.309             Thread-0:  PDU.getData() build up data 000000100000001500000000000001f7 (5)
+2022-08-23 15:04:34.31                Thread-0:  entered
+2022-08-23 15:04:34.311                Thread-0:  sent 16 bytes to 127.0.0.1 on port 9086 (7)
+2022-08-23 15:04:34.311                Thread-0:  exited
+2022-08-23 15:04:34.312             Thread-0:  successfully sent pdu's data over connection (7)
+2022-08-23 15:04:34.312             Thread-0:  exited
+2022-08-23 15:04:34.312          Thread-0:  exited
+2022-08-23 15:04:34.313       Thread-0:  exited
+2022-08-23 15:04:34.32       Receiver-1:  read 16 bytes from socket (8)
+2022-08-23 15:04:34.32       Receiver-1:  no more data remains in the socket (8)
+2022-08-23 15:04:34.32       Receiver-1:  totally read 16 bytes from socket (7)
+2022-08-23 15:04:34.321       Receiver-1:  exited
+2022-08-23 15:04:34.321    Receiver-1:  trying to create pdu from unprocessed buffer (1)
+2022-08-23 15:04:34.321    Receiver-1:  PDU.setData() parsing header 000000108000001500000000000001f7 (5)
+2022-08-23 15:04:34.322    Receiver-1:  PDU.setData() no data for body (5)
+2022-08-23 15:04:34.322    Receiver-1:  received complete pdu(enquirelink_resp: (pdu: 16 80000015 0 503) )  (1)
+2022-08-23 15:04:34.322    Receiver-1:  there is 0 bytes left in unprocessed buffer (1)
+2022-08-23 15:04:34.323    Receiver-1:  ReceiverBase.receivePDUFromConnection finished (3)
+2022-08-23 15:04:34.323    Receiver-1:  Receiver.receiveAsync(): PDU received, processing (enquirelink_resp: (pdu: 16 80000015 0 503) )  (1)
+2022-08-23 15:04:34.323    Receiver-1:  receiver passing pdu to ServerPDUEventListener (1)
+2022-08-23 15:04:34.323    Receiver-1:  Receiver.receiveAsync() going to receive pdu. (3)
+2022-08-23 15:04:34.324    Receiver-1:  ReceiverBase.receivePDUFromConnection start (3)
+2022-08-23 15:04:34.324       Receiver-1:  entered
+2022-08-23 15:04:34.324       Receiver-1:  going to read from socket (8)
+2022-08-23 15:04:34.324       Receiver-1:  comms timeout=60000 receive timeout=20000 receive buffer size=4096 (8)
+2022-08-23 15:04:37.352          main:  entered
+2022-08-23 15:04:37.352          main:  Sending request (submit: (pdu: 0 4 0 2) (addr: 1 1 70710105)  (addr: 1 1 105)  (sm: enc: ASCII msg: hola cuate)  (opt: (short: (tlv: 516) 23)  ) )  (4)
+2022-08-23 15:04:37.352             main:  entered
+2022-08-23 15:04:37.353             main:  going to send pdu's data over connection (7)
+2022-08-23 15:04:37.353             main:  PDU.getData() build up data 0000003f0000000400000000000000027661730001013730373130313035000101313035000000000000010000000a686f6c61206375617465020400020017 (5)
+2022-08-23 15:04:37.353                main:  entered
+2022-08-23 15:04:37.353                main:  sent 63 bytes to 127.0.0.1 on port 9086 (7)
+2022-08-23 15:04:37.353                main:  exited
+2022-08-23 15:04:37.354             main:  successfully sent pdu's data over connection (7)
+2022-08-23 15:04:37.354             main:  exited
+2022-08-23 15:04:37.354          main:  exited
+2022-08-23 15:04:37.354       main:  exited
+2022-08-23 15:04:37.359       Receiver-1:  read 25 bytes from socket (8)
+2022-08-23 15:04:37.359       Receiver-1:  no more data remains in the socket (8)
+2022-08-23 15:04:37.359       Receiver-1:  totally read 25 bytes from socket (7)
+2022-08-23 15:04:37.359       Receiver-1:  exited
+2022-08-23 15:04:37.359    Receiver-1:  trying to create pdu from unprocessed buffer (1)
+2022-08-23 15:04:37.36    Receiver-1:  PDU.setData() parsing header 00000019800000040000000000000002 (5)
+2022-08-23 15:04:37.36    Receiver-1:  PDU.setData() parsing body 536d73633230303100 (5)
+2022-08-23 15:04:37.36    Receiver-1:  received complete pdu(submit_resp: (pdu: 25 80000004 0 2) Smsc2001 )  (1)
+2022-08-23 15:04:37.36    Receiver-1:  there is 0 bytes left in unprocessed buffer (1)
+2022-08-23 15:04:37.36    Receiver-1:  ReceiverBase.receivePDUFromConnection finished (3)
+2022-08-23 15:04:37.36    Receiver-1:  Receiver.receiveAsync(): PDU received, processing (submit_resp: (pdu: 25 80000004 0 2) Smsc2001 )  (1)
+2022-08-23 15:04:37.361    Receiver-1:  receiver passing pdu to ServerPDUEventListener (1)
+2022-08-23 15:04:37.361    Receiver-1:  Receiver.receiveAsync() going to receive pdu. (3)
+2022-08-23 15:04:37.361    Receiver-1:  ReceiverBase.receivePDUFromConnection start (3)
+2022-08-23 15:04:37.361       Receiver-1:  entered
+2022-08-23 15:04:37.361       Receiver-1:  going to read from socket (8)
+2022-08-23 15:04:37.361       Receiver-1:  comms timeout=60000 receive timeout=20000 receive buffer size=4096 (8)
+2022-08-23 15:04:37.518       Receiver-1:  read 140 bytes from socket (8)
+2022-08-23 15:04:37.519       Receiver-1:  no more data remains in the socket (8)
+2022-08-23 15:04:37.519       Receiver-1:  totally read 140 bytes from socket (7)
+2022-08-23 15:04:37.519       Receiver-1:  exited
+2022-08-23 15:04:37.519    Receiver-1:  trying to create pdu from unprocessed buffer (1)
+2022-08-23 15:04:37.519    Receiver-1:  PDU.setData() parsing header 0000008c0000000500000000000001f5 (5)
+2022-08-23 15:04:37.52    Receiver-1:  PDU.setData() parsing body 766173000101313035000101313035000400000000000000006269643a536d736332303031207375623a3120646c7672643a31207375626d697420646174653a3232303832333135303420646f6e6520646174653a3232303832333135303420737461743a30206572723a3020746578743a686f6c61206375617465 (5)
+2022-08-23 15:04:37.52    Receiver-1:  received complete pdu(deliver: (pdu: 140 5 0 501) (addr: 1 1 105)  (addr: 1 1 105)  (sm: msg: id:Smsc2001 sub:1 dlvrd:1 submit date:2208231504 done date:2208231504 stat:0 err:0 text:hola cuate)  (opt: ) )  (1)
+2022-08-23 15:04:37.52    Receiver-1:  there is 0 bytes left in unprocessed buffer (1)
+2022-08-23 15:04:37.52    Receiver-1:  ReceiverBase.receivePDUFromConnection finished (3)
+2022-08-23 15:04:37.52    Receiver-1:  Receiver.receiveAsync(): PDU received, processing (deliver: (pdu: 140 5 0 501) (addr: 1 1 105)  (addr: 1 1 105)  (sm: msg: id:Smsc2001 sub:1 dlvrd:1 submit date:2208231504 done date:2208231504 stat:0 err:0 text:hola cuate)  (opt: ) )  (1)
+2022-08-23 15:04:37.521    Receiver-1:  receiver passing pdu to ServerPDUEventListener (1)
+2022-08-23 15:04:37.521    Receiver-1:  Receiver.receiveAsync() going to receive pdu. (3)
+2022-08-23 15:04:37.521    Receiver-1:  ReceiverBase.receivePDUFromConnection start (3)
+2022-08-23 15:04:37.521       Receiver-1:  entered
+2022-08-23 15:04:37.521       Receiver-1:  going to read from socket (8)
+2022-08-23 15:04:37.521       Receiver-1:  comms timeout=60000 receive timeout=20000 receive buffer size=4096 (8)
+2022-08-23 15:05:04.314       Thread-0:  entered
+2022-08-23 15:05:04.315          Thread-0:  entered
+2022-08-23 15:05:04.315          Thread-0:  Sending request (enquirelink: (pdu: 0 15 0 [504]) )  (4)
+2022-08-23 15:05:04.315             Thread-0:  entered
+2022-08-23 15:05:04.316             Thread-0:  going to send pdu's data over connection (7)
+2022-08-23 15:05:04.316             Thread-0:  PDU.getData() build up data 000000100000001500000000000001f8 (5)
+2022-08-23 15:05:04.316                Thread-0:  entered
+2022-08-23 15:05:04.317                Thread-0:  sent 16 bytes to 127.0.0.1 on port 9086 (7)
+2022-08-23 15:05:04.317                Thread-0:  exited
+2022-08-23 15:05:04.317             Thread-0:  successfully sent pdu's data over connection (7)
+2022-08-23 15:05:04.318             Thread-0:  exited
+2022-08-23 15:05:04.318          Thread-0:  exited
+2022-08-23 15:05:04.318       Thread-0:  exited
+2022-08-23 15:05:04.324       Receiver-1:  read 16 bytes from socket (8)
+2022-08-23 15:05:04.325       Receiver-1:  no more data remains in the socket (8)
+2022-08-23 15:05:04.325       Receiver-1:  totally read 16 bytes from socket (7)
+2022-08-23 15:05:04.325       Receiver-1:  exited
+2022-08-23 15:05:04.326    Receiver-1:  trying to create pdu from unprocessed buffer (1)
+2022-08-23 15:05:04.326    Receiver-1:  PDU.setData() parsing header 000000108000001500000000000001f8 (5)
+2022-08-23 15:05:04.326    Receiver-1:  PDU.setData() no data for body (5)
+2022-08-23 15:05:04.327    Receiver-1:  received complete pdu(enquirelink_resp: (pdu: 16 80000015 0 504) )  (1)
+2022-08-23 15:05:04.327    Receiver-1:  there is 0 bytes left in unprocessed buffer (1)
+2022-08-23 15:05:04.327    Receiver-1:  ReceiverBase.receivePDUFromConnection finished (3)
+2022-08-23 15:05:04.328    Receiver-1:  Receiver.receiveAsync(): PDU received, processing (enquirelink_resp: (pdu: 16 80000015 0 504) )  (1)
+2022-08-23 15:05:04.328    Receiver-1:  receiver passing pdu to ServerPDUEventListener (1)
+2022-08-23 15:05:04.328    Receiver-1:  Receiver.receiveAsync() going to receive pdu. (3)
+2022-08-23 15:05:04.329    Receiver-1:  ReceiverBase.receivePDUFromConnection start (3)
+2022-08-23 15:05:04.329       Receiver-1:  entered
+2022-08-23 15:05:04.329       Receiver-1:  going to read from socket (8)
+2022-08-23 15:05:04.329       Receiver-1:  comms timeout=60000 receive timeout=20000 receive buffer size=4096 (8)
